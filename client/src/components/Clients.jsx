@@ -3,8 +3,8 @@ import React from 'react';
 function Clients() {
 
   return (
-    <section className="bg-gray-500 text-white h-auto items-center justify-center pt-16" id="clients">
-      <div className="container text-center mx-auto">
+    <section className="bg-gray-500 text-white h-full items-center justify-center pt-16" id="clients">
+      <div className="container text-center mx-auto animate-move-up">
         <h1 className="text-3xl font-medium mb-2">Our Clients</h1>
         <p className='text-lg mb-16 px-8 mx-auto'>
           Our clients aren't just clients, they are valued partners in progress. 

@@ -7,6 +7,7 @@ import Clients from './components/Clients';
 import Footer from './components/Footer'
 import Process from "./components/Process";
 import Projects from "./components/Projects";
+import 'tailwindcss/tailwind.css';
 
 function App() {
   return (

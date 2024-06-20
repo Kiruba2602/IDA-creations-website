@@ -3,8 +3,8 @@ import Aboutpng from '../assets/png1.png'
 
 function About() {
   return (
-    <section className="bg-white text-gray-800 h-auto flex items-center justify-center pt-16 my-8" id="about">
-      <div className="max-w-screen px-4 sm:px-6 lg:px-8">
+    <section className="bg-white text-gray-800 h-screen flex items-center justify-center pt-16 my-8" id="about">
+      <div className="max-w-screen px-4 sm:px-6 lg:px-8 animate-move-up">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <h3 className="text-3xl font-medium text-gray-900 mb-4">IDA - AR, VR and MR Company in India</h3>

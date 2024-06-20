@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Contact from './Contact';
+import axios from 'axios';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:5000/api/contact', {email});
+      if (response.status === 200){
+        console.log("successfully subscribed to the newsletter.");
+        setEmail('');
+      }
+    } catch (err) {
+      console.error(err);
+      setEmail('');
+    }
+  }
   return (
-    <footer className="bg-gray-900 text-gray-400 py-2 px-4 pt-16" id='contact-us'>
-      <div className="container mx-auto flex flex-col mx-auto md:flex-row items-start justify-around">
+    <footer className="bg-gray-900 h-full text-gray-400 py-2 px-4 pt-16" id='contact-us'>
+      <div className="container mx-auto flex flex-col mx-auto md:flex-row items-start justify-around animate-move-up">
         <div className="flex w-1/3">
           <Contact />
         </div>
@@ -15,8 +31,8 @@ const Footer = () => {
           <p className="text-gray-400">
             Subscribe to our newsletter to stay updated.
           </p>
-          <form className="flex flex-row items-start space-x-2 w-full">
-            <input type="email" placeholder="Enter your email" className="bg-gray-800 text-gray-400 py-2 px-8 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <form className="flex flex-row items-start space-x-2 w-full" onSubmit={handleSubmit}>
+            <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-gray-800 text-gray-400 py-2 px-8 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
             <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">Subscribe</button>
           </form>
         </div>

@@ -5,8 +5,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
-    <section className="bg-gray-900 text-white h-auto flex items-center justify-center">
-      <div className="flex flex-col items-start mb-8 md:mb-0">
+    <section className="bg-gray-900 text-white h-full flex items-center justify-center">
+      <div className="flex flex-col items-start mb-8 md:mb-0 animate-move-up">
           <h2 className="text-xl font-bold text-white mb-4">Contact Us</h2>
           <p className="text-gray-400 mb-2">
             INDUSTRIAL DESIGN & ANIMATIONS

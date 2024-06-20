@@ -14,8 +14,8 @@ import Edit from '../assets/film-edit.png';
 
 const Services = () => {
   return (
-    <section className="bg-gray-100 text-gray-800 h-auto flex items-center justify-center pt-16" id="services">
-      <div className="container mx-auto my-16 px-8 md:px-8 lg:px-16">
+    <section className="bg-gray-100 text-gray-800 h-screen flex items-center justify-center pt-16" id="services">
+      <div className="container mx-auto my-16 px-8 md:px-8 lg:px-16 animate-move-up">
         <h1 className="text-4xl font-medium mb-2 text-center">Our Services</h1>
         <p className='text-lg font-medium mb-8 text-center items-start'>Reinvent your industry with our industrial solutions</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

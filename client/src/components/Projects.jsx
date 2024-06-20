@@ -5,8 +5,8 @@ import img3 from '../assets/project3.jpeg';
 
 const Projects = () => {
   return (
-    <section className="bg-gray-100 text-gray-800 h-full flex items-center justify-center pt-8 mb-16" id="projects">
-      <div className="container mx-auto p-8">
+    <section className="bg-gray-100 text-gray-800 h-screen flex items-center justify-center px-16" id="projects">
+      <div className="container mx-auto p-8 animate-move-up">
         <h2 className="text-3xl text-center font-bold mb-4">My Projects</h2>
         <p className='text-lg text-center mb-16'>Have a sneak peak at the Arts we Crafted</p>
         <div className="flex flex-wrap justify-center">

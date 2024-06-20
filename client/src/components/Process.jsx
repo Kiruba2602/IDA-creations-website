@@ -5,8 +5,8 @@ import execution from '../assets/execution.jpg';
 
 const Process = () => {
   return (
-    <section className="bg-green-100 text-gray-800 h-auto flex items-center justify-center px-16" id="process">
-      <div className="container mx-auto my-16">
+    <section className="bg-green-100 text-gray-800 h-screen flex items-center justify-center px-16" id="process">
+      <div className="container mx-auto my-16 animate-move-up">
         <h2 className="text-3xl font-medium text-center mb-2">Our Working Process</h2>
         <p className="text-lg text-center mb-16">A well-structured workflow with great design execution</p>
         <div className="flex flex-row justify-center items-center">
